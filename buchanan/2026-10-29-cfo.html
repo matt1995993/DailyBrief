@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Buchanan General CFO Morning Brief</title>
+<meta name="robots" content="noindex">
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}
+.top{border-bottom:4px solid #2E7D5B;padding:18px 20px}
+.top b{color:#0F3B5F;font-size:22px}.top span{color:#2E7D5B;font-size:22px}
+.hero{background:#0F3B5F;color:#fff;padding:22px 20px}
+.hero small{letter-spacing:2px;text-transform:uppercase;font-weight:bold;font-size:12px}
+.hero h1{font-family:Georgia,serif;font-weight:normal;font-size:26px;margin:8px 0 0}
+.wrap{max-width:600px;margin:0 auto}
+.player{padding:28px 20px;text-align:center}
+button{font-size:22px;font-weight:bold;color:#fff;background:#0F3B5F;border:0;border-radius:40px;padding:18px 40px;cursor:pointer}
+audio{width:100%;margin-top:22px}
+p{font-size:14px;color:#2b3440}
+</style></head><body><div class="wrap">
+<div class="top"><b>Buchanan General</b> <span>Hospital</span></div>
+<div class="hero"><small>CFO Morning Brief &middot; Week of Oct. 26, 2026</small><h1>Three things that touch the balance sheet</h1></div>
+<div class="player">
+<button id="go">&#9654; Play the Morning Brief</button>
+<audio id="a" controls preload="auto" src="2026-10-29-cfo.mp3"></audio>
+<p>4 min 13 sec. Prepared for Timothy Matney, CFO, from public sources only.</p>
+</div></div>
+<script>
+const a=document.getElementById('a'),b=document.getElementById('go');
+b.onclick=()=>{a.paused?a.play():a.pause()};
+a.onplay=()=>b.innerHTML='&#10074;&#10074; Pause';a.onpause=()=>b.innerHTML='&#9654; Play the Morning Brief';
+a.play().catch(()=>{});
+</script></body></html>
